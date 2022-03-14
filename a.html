@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name = "viewport" content = "width = device-width initial-scale =1">
+	<style>
+
+	body{
+		font-family: Calibri, Helvetica, sans-serif; 
+		background-color: lightblue;
+	}
+
+	.container{
+		padding: 50px;
+		background-color: lightblue;
+	}
+
+
+	input[type=text],
+	input[type=password],
+	textarea
+	{
+		width: 100%;
+		padding: 15px;
+		margin: 5px 0 22px 0;
+		display: inline-block;
+		border: none;
+		background: #f1f1f1;
+
+	}
+	input[type=text]:focus, input[type=password]:focus
+	{
+
+	background-color: orange; 
+	outline:none;
+}
+
+div{
+	padding: 10px 0;
+}
+hr{
+	border: 1px solid #f1f1f1;
+	margin-bottom: 25px;
+}
+
+.registerbtn{
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px 20px;
+	margin:  8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+}
+
+.registerbtn:hover{
+	opacity: 1;
+}
+</style>
+</head>
+<body>
+<form>
+
+	<div class = "container">
+		<center><h1> Student Registration Form</h1></center>
+		<hr>
+		<label>Firstname</label>
+		<input type = "text" name = "firstname" placeholder="Firstname" size = "15" required/>
+
+		<label>Middlename</label>
+		<input type = "text" name = "Middlename" placeholder="Middlename" size = "15" required/>
+
+		<label>Lastname</label>
+		<input type = "text" name = "Lastname" placeholder="Lastname" size = "15" required/>
+		<div>
+
+
+			<label>Course:</label>
+			<select>
+				<option value ="Course"> Course</option>
+				<option value ="Data Structure">Data Structure</option>
+				<option value ="Maths"> Maths</option>
+				<option value ="Web programming">Web programming</option>
+				<option value ="Islamic"> Islamic</option>
+				<option value ="English">English</option>
+				<option value ="Computer Architecture">Computer Architecture</option>
+			</select>
+		</div>
+
+		<div>
+
+		<label>Gender:</label><br>
+		<input type="radio" value = "Male" name ="gender" checked> Male
+		<input type="radio" value = "Female" name ="gender" checked> Female
+		<input type="radio" value = "Other" name ="gender" checked> Other
+
+	</div>
+	<label>Phone number:</label>
+	<input type = "text" name = "country code" placeholder ="Country Code" value = "+93" size = "2"/>
+	<input type ="text" name = "phone" placeholder = "phone no." size ="10" required>
+	
+
+	Current Address:
+	<textarea cols = "80" rows = "5" placeholder="Current Address" value = "address required"></textarea>
+
+
+
+		<label for="email">Email</label>
+		<input type = "text" placeholder="Enter your Email Address" name = "email" required><br>
+
+		<label for="psw">Password</label>
+		<input type = "password" placeholder="Enter your password" pattern = "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{2}" 
+		  name ="psw" required>
+
+		<label for="psw-repeat">Confirm Password</label>
+		<input type = "password" placeholder="Confirm your password" name = "psw-repeat" required>
+
+		<button type="submit" class ="registerbtn">Register</button>
+
+	</form>
+</body>
+</html>
+
+		
+
+	
+
+
+
+
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
